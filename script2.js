@@ -5,7 +5,15 @@ $(document).ready(function(){
     $('.loc').each(function(){
         $(this).html('Location: '+$_GET.state);
     });
+     $('.bid').each(function(){
+        $(this).html('Bid: $'+ randomBid($_GET.price, 0));
+    });
 });
+function randomBid (max, min){
+    
+    return Math.round(Math.random()*(max-min)+min);
+}
+
 
 function getQueryParams(qs) {
     qs = qs.split("+").join(" ");
