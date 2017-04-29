@@ -4,7 +4,7 @@
 <head>
     <title> Car customization Menu</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="../script.js"></script>
     <!-- Latest compiled and minified CSS -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -19,34 +19,34 @@
     <meta name="viewport" content="width=device-width, inital-scale=1">
 
 
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
 </head>
+
 <body style="margin: 0;">
     <div class="main-container">
         <div class="team-header" style="display: flex;">
-            <img src="../image/logo.png"/>
+            <img src="../Images/logo.png" />
         </div>
-        <form>
+        <form action="index3.html" method="get">
             <div>
                 <div class="dropdown">
-                    <select class="form-btn col-2" id="color">
-                        <option>Color</option>
-                        <option>Red</option>
-                        <option>Blue</option>
-                        <option>Black</option>
+                    <select name="color" class="form-btn col-2" id="color">
+                        <option value="white">White</option>
+                        <option value="red">Red</option>
+                        <option value="black">Black</option>
                     </select>
-                    <select class="form-btn col-2" id="type">
-                        <option>Type</option>
-                        <option>Sedan</option>
-                        <option>Coupe</option>
-                        <option>SUV</option>
+                    <select name="type_car" class="form-btn col-2" id="type">
+                        <option value="sedan">Sedan</option>
+                        <option value="suv">SUV</option>
                     </select>
-                    <select class="col-2" id="battery">
-                        <option>Battery</option>
+                    <select name="battery" class="col-2" id="battery">
                         <option>60</option>
-                        <option>90</option>
                         <option>75</option>
+                        <option>100</option>
                     </select>
-                    
+
                     <!--    TODO: States dropdown   -->
                     <select name="state" class="col-2">
                         <option value="States"> Location</option>
@@ -103,15 +103,17 @@
                     	<option value="WY">Wyoming</option>
 </select>
 
-                    <input type="number" placeholder="Enter Price..." class="col-2" id="price" min="0">
+                    <input name="price" type="number" placeholder="Enter Price" class="col-2" id="price" min="0">
                     <button type="submit" class="col-2" id="button" href="../HTML/index3.html">Order</button>
                 </div>
                 <div id="display-img">
-                    <img style="width: 100%; height: 100vh" src="http://placehold.it/350x150">
+                    <img style="width: 100%;" src="../Images/cars/sedan_white.jpg">
                 </div>
             </div>
         </form>
     </div>
 </body>
+
 </html>
+
 
