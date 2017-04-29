@@ -1,7 +1,7 @@
 # What this project does? <br>
     This project takes what features a person wants in their car: the price range,
     type and style of it, where it will be delivered, how its size affects storage space,
-    and its attributes.<br>
+    and its attributes.
 # How we built it?<br>
     We used javascript to have the information determine what the car looks like,
     jquery to create forms, css to style to form to fill out, and html to include the text boxes and determine the format of it.
